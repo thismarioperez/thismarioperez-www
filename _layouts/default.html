@@ -5,7 +5,7 @@
   <body>
     {% include header.html %}
 
-    <main class="page page---{{ page.layout }}--layout{% if page.slug %} page--{{ page.slug }}{% endif %}">
+    <main class="page page--{{ page.layout }}-layout page--{{ page.slug }}">
       {{ content }}
     </main>
 
