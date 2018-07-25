@@ -16,7 +16,7 @@
 title: thismarioperez
 email: hello@thismarioperez.com
 description: >- # this means to ignore newlines until "baseurl:"
-  The portfolio of web projects for the one and only thismarioperez.
+  The portfolio of web projects for thismarioperez.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: thismarioperez
@@ -25,9 +25,26 @@ instagram_username: thismarioperez
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path
+  home:
+    output: false
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

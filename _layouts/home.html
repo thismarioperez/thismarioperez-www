@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+{% for section in site.home %}
+  <section class="page__section">
+    {{ section.content | markdownify }}
+  </section>
+{% endfor %}
