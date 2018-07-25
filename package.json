@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/thismarioperez/thismarioperez-www/issues"
   },
-  "homepage": "https://github.com/thismarioperez/thismarioperez-www#readme"
+  "homepage": "https://github.com/thismarioperez/thismarioperez-www#readme",
+  "devDependencies": {
+    "webpack": "^4.16.2"
+  }
 }
