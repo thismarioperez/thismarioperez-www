@@ -1,0 +1,19 @@
+{
+  "name": "thismarioperez-www",
+  "version": "0.0.1",
+  "description": "Personal portfolio for thismarioperez",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thismarioperez/thismarioperez-www.git"
+  },
+  "author": "thismarioperez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thismarioperez/thismarioperez-www/issues"
+  },
+  "homepage": "https://github.com/thismarioperez/thismarioperez-www#readme"
+}
