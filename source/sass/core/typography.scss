@@ -1,0 +1,135 @@
+/******************************************************************************
+ * Core/Typography
+*******************************************************************************/
+/******************************************************************************
+ * Paragraphs
+*******************************************************************************/
+p,
+li {
+  @include p();
+
+  @media #{$small} {
+    font-size: $p-size-two;
+    line-height: $p-line-two;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  strong {
+    @include b();
+  }
+}
+blockquote,
+.blockquote {
+  @include quote();
+
+  @media #{$small} {
+    font-size: $quote-size-two;
+    line-height: $quote-line-two;
+  }
+}
+
+/******************************************************************************
+ * Links
+*******************************************************************************/
+.a {
+  position: relative;
+  transition: color $duration $ease;
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 0;
+    background-color: $color-black;
+    transition: width $duration $ease;
+  }
+}
+
+/******************************************************************************
+ * Headlines
+*******************************************************************************/
+h1 {
+  @include h1();
+
+  @media #{$small} {
+    font-size: $h1-size-two;
+    line-height: $h1-line-two;
+  }
+}
+
+h2 {
+  @include h2();
+
+  @media #{$small} {
+    font-size: $h2-size-two;
+    line-height: $h2-line-two;
+  }
+}
+
+h3 {
+  @include h3();
+}
+
+h1,
+h2,
+h3 {
+  &,
+  & > a {
+    color: inherit;
+  }
+  strong {
+    @include b();
+  }
+}
+
+em {
+  @include b();
+}
+
+/*******************************************************************************
+ * Spacing
+ ******************************************************************************/
+p + p,
+p + ul,
+p + ol,
+p + h1,
+p + h2,
+p + h3,
+ul + p,
+ul + ul,
+ul + ol,
+ul + h1,
+ul + h2,
+ul + h3,
+ol + p,
+ol + ol,
+ol + ul,
+ol + h1,
+ol + h2,
+ol + h3,
+h1 + p,
+h1 + ul,
+h1 + ol,
+h1 + h1,
+h1 + h2,
+h1 + h3,
+h2 + p,
+h2 + ul,
+h2 + ol,
+h2 + h1,
+h2 + h2,
+h2 + h3,
+h3 + p,
+h3 + ul,
+h3 + ol,
+h3 + h1,
+h3 + h2,
+h3 + h3 {
+  @include pp();
+}

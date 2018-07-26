@@ -1,0 +1,68 @@
+/******************************************************************************
+ * Display
+*******************************************************************************/
+
+.-exp-3 {
+  @include exp-3();
+}
+.-exp-2 {
+  @include exp-2();
+}
+.-exp {
+  @include exp();
+}
+.-wrap {
+  @include wrap();
+}
+.-wrap-copy {
+  @include wrap-copy();
+}
+.-vtop {
+  vertical-align: top;
+}
+.-vbot {
+  vertical-align: bottom;
+}
+.-full {
+  width: 100%;
+}
+.-tall {
+  height: 100%;
+}
+.-block {
+  display: block;
+}
+.-pointer {
+  cursor: pointer;
+}
+.-cutoff {
+  max-width: $wrap-copy;
+}
+.-meta {
+  font-size: $meta-size;
+}
+.-fzero {
+  font-size: 0 !important;
+}
+
+/******************************************************************************
+ * Alignment
+*******************************************************************************/
+.-text {
+  &--left {
+    text-align: left;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--hidden {
+    display: inline-block;
+    text-indent: -99999%;
+  }
+}
