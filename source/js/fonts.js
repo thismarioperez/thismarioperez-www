@@ -48,7 +48,7 @@ const handleInActive = (family, fvd) => {
  */
 const config = {
   google: {
-    families: ['Source Code Pro']
+    families: ['Source Code Pro:200,400,700']
   },
   active: handleActive,
   fontInactive: handleInActive
