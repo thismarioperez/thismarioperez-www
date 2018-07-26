@@ -7,7 +7,7 @@
     "postinstall": "cd ./node_modules/properjs-hobo && npm install && npm run build -- 'append remove is'",
     "dev": "jekyll build && NODE_ENV=development webpack",
     "build": "jekyll build && NODE_ENV=production webpack",
-    "start": "jekyll serve --livereload & NODE_ENV=development webpack --watch & browser-sync start --proxy 'localhost:4000'"
+    "start": "jekyll serve & NODE_ENV=development webpack --watch & browser-sync start --proxy 'localhost:4000' --files '_site'"
   },
   "repository": {
     "type": "git",
@@ -43,7 +43,8 @@
     "webpack-cli": "^3.1.0"
   },
   "dependencies": {
-    "eventemitter3": "^2.0.3",
-    "properjs-hobo": "^0.3.18"
+    "eventemitter3": "^3.1.0",
+    "properjs-hobo": "^0.3.18",
+    "webfontloader": "^1.6.28"
   }
 }
