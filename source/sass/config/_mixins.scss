@@ -119,6 +119,7 @@
   @media #{$small} {
     padding-left: $nudge;
     padding-right: $nudge;
+    max-width: $wrap-copy;
   }
 }
 @mixin wrap-media {
@@ -136,4 +137,7 @@
 @mixin exp-3() {
   padding-bottom: $expander-three;
   padding-top: $expander-three;
+}
+@mixin bg-dark() {
+  background: $color-black;
 }
