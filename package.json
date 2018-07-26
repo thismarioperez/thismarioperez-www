@@ -4,7 +4,7 @@
   "description": "Personal portfolio for thismarioperez",
   "main": "index.js",
   "scripts": {
-    "postinstall": "cd ./node_modules/properjs-hobo && npm install && npm run build -- 'append remove is' && cd ../../ npm run dev",
+    "postinstall": "cd ./node_modules/properjs-hobo && npm install && npm run build -- 'append remove is'",
     "dev": "jekyll build && NODE_ENV=development webpack",
     "build": "jekyll build && NODE_ENV=production webpack"
   },
@@ -42,9 +42,7 @@
     "webpack-cli": "^3.1.0"
   },
   "dependencies": {
-    "@squarespace/core": "^1.0.1",
     "eventemitter3": "^2.0.3",
-    "normalize.css": "^7.0.0",
     "properjs-hobo": "^0.3.18"
   }
 }
