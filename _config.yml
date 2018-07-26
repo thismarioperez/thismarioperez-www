@@ -62,3 +62,8 @@ exclude:
   - vendor/ruby/
   - webpack.config.js
   - webpack.cleanup-stats-plugin.js
+
+# Files to keep when rebuilding to destination.
+keep_files:
+  - assets/js/
+  - assets/css/
