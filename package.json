@@ -6,7 +6,8 @@
   "scripts": {
     "postinstall": "cd ./node_modules/properjs-hobo && npm install && npm run build -- 'append remove is'",
     "dev": "jekyll build && NODE_ENV=development webpack",
-    "build": "jekyll build && NODE_ENV=production webpack"
+    "build": "jekyll build && NODE_ENV=production webpack",
+    "start": "jekyll serve --livereload & NODE_ENV=development webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -30,7 +31,7 @@
     "css-loader": "^0.28.7",
     "eslint": "^4.9.0",
     "eslint-config-squarespace": "^1.0.1",
-    "eslint-loader": "^1.9.0",
+    "eslint-loader": "^2.1.0",
     "expose-loader": "^0.7.5",
     "mini-css-extract-plugin": "^0.4.1",
     "node-sass": "^4.8.3",
