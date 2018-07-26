@@ -7,7 +7,7 @@
     "postinstall": "cd ./node_modules/properjs-hobo && npm install && npm run build -- 'append remove is'",
     "dev": "jekyll build && NODE_ENV=development webpack",
     "build": "jekyll build && NODE_ENV=production webpack",
-    "start": "jekyll serve --livereload & NODE_ENV=development webpack --watch"
+    "start": "jekyll serve --livereload & NODE_ENV=development webpack --watch & browser-sync start --proxy 'localhost:4000'"
   },
   "repository": {
     "type": "git",
