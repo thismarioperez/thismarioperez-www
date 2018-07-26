@@ -8,8 +8,9 @@
     "build": "npm-run-all jekyll webpack -s",
     "dev": "npm-run-all jekyll webpack:dev -s",
     "jekyll": "jekyll build",
+    "jekyll:dev": "JEKYLL_ENV=development jekyll build",
     "start": " npm-run-all server webpack:dev:watch -p",
-    "server": "(jekyll serve) & browser-sync start --proxy 'localhost:4000' --files '_site'",
+    "server": "(JEKYLL_ENV=development jekyll serve) & browser-sync start --proxy 'localhost:4000' --files '_site'",
     "webpack": "NODE_ENV=production webpack",
     "webpack:dev": "NODE_ENV=development webpack",
     "webpack:dev:watch": "NODE_ENV=development webpack --watch"
