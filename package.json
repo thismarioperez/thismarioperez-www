@@ -2,12 +2,17 @@
   "name": "thismarioperez-www",
   "version": "0.0.1",
   "description": "Personal portfolio for thismarioperez",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "postinstall": "cd ./node_modules/properjs-hobo && npm install && npm run build -- 'append remove is'",
-    "dev": "jekyll build && NODE_ENV=development webpack",
-    "build": "jekyll build && NODE_ENV=production webpack",
-    "start": "jekyll serve & NODE_ENV=development webpack --watch & browser-sync start --proxy 'localhost:4000' --files '_site'"
+    "build": "npm-run-all jekyll webpack -s",
+    "dev": "npm-run-all jekyll webpack:dev -s",
+    "jekyll": "jekyll build",
+    "start": " npm-run-all server webpack:dev:watch -p",
+    "server": "(jekyll serve) & browser-sync start --proxy 'localhost:4000' --files '_site'",
+    "webpack": "NODE_ENV=production webpack",
+    "webpack:dev": "NODE_ENV=development webpack",
+    "webpack:dev:watch": "NODE_ENV=development webpack --watch"
   },
   "repository": {
     "type": "git",
