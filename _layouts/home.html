@@ -3,7 +3,9 @@ layout: default
 ---
 
 {% for section in site.home %}
-  <section class="page__section">
-    {{ section.content | markdownify }}
+  <section class="page__section -wrap{% if section.modifiers %} {{section.modifiers}}{% endif %}">
+    <div class="page__section__inner -exp-3 -wrap-copy">
+      {{ section.content | markdownify }}
+    </div>
   </section>
 {% endfor %}
