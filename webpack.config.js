@@ -61,11 +61,11 @@ module.exports = {
   module: {
     rules: [
       // JS Linter
-      // { test: /source\/js\/.*\.js$/,
-      //   exclude: /node_modules/,
-      //   use: ['eslint-loader'],
-      //   enforce: 'pre'
-      // },
+      { test: /source\/js\/.*\.js$/,
+        exclude: /node_modules/,
+        use: ['eslint-loader'],
+        enforce: 'pre'
+      },
 
       // Handle JS files
       { test: /source\/js\/.*\.js$/,
