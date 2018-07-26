@@ -25,6 +25,11 @@ instagram_username: thismarioperez
 
 # Build settings
 markdown: kramdown
+
+# Kramdown settings
+kramdown:
+  input: GFM
+
 # theme: minima
 plugins:
   - jekyll-feed
@@ -65,5 +70,4 @@ exclude:
 
 # Files to keep when rebuilding to destination.
 keep_files:
-  - assets/js/
-  - assets/css/
+  - assets
