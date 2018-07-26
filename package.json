@@ -4,7 +4,7 @@
   "description": "Personal portfolio for thismarioperez",
   "main": "app.js",
   "scripts": {
-    "postinstall": "cd ./node_modules/properjs-hobo && npm install && npm run build -- 'append remove is'",
+    "postinstall": "cd ./node_modules/properjs-hobo && npm install && npm run build -- 'append remove is one'",
     "build": "npm-run-all jekyll webpack -s",
     "dev": "npm-run-all jekyll webpack:dev -s",
     "jekyll": "jekyll build",
