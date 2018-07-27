@@ -1,7 +1,7 @@
 import config from '../core/config';
 import log from '../core/log';
 
-const DEFAULTS = {
+const $MODULE_DEFAULTS = {
   moduleName: 'Screen',
   teardownDelay: 400,
   activeClassname: config.activeClassname,
@@ -11,9 +11,9 @@ const DEFAULTS = {
 
 
 class Screen {
-  constructor( $element, options = Object.assign( {}, DEFAULTS ) ) {
+  constructor( $element, options = {} ) {
     this.element = $element;
-    this.options = options;
+    this.options = Object.assign({}, $MODULE_DEFAULTS, options );
   }
 
   /**
