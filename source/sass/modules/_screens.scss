@@ -1,0 +1,24 @@
+/*******************************************************************************
+ * Screen Modules
+ ******************************************************************************/
+.screen {
+  @include cover(fixed);
+  z-index: $z-layer-infront;
+
+  &__inner {
+    position: relative;
+    height: 100%;
+    width: 100%;;
+  }
+}
+
+.intro {
+
+
+  // &__inner {}
+
+  &__logo {
+    @include center();
+    width: $intro-logo-size;
+  }
+}
