@@ -1,19 +1,42 @@
 /*******************************************************************************
  * Screen Modules
  ******************************************************************************/
+// Transition mixins for .screen
+@mixin screen-transition($delay: 0s) {
+  animation-delay: $delay;
+  transition: visibility 0s ($duration-two + $delay) $ease;
+}
+@mixin screen-transition-active($delay: 0s) {
+  animation-delay: $delay;
+  transition: visibility 0s $delay $ease;
+}
 .screen {
   @include cover(fixed);
   z-index: $z-layer-infront;
+  @include screen-transition();
 
   &__inner {
     position: relative;
     height: 100%;
     width: 100%;;
   }
+
+  &.is-active {
+    visibility: visible;
+    @include screen-transition-active();
+
+  }
+
+  // Animation modifiers
+  &--slide-in-left {
+    animation: screen-slide-in-left $duration-two $ease 0s 1 forwards;
+  }
+  &--slide-out-left {
+    animation: screen-slide-out-left $duration-two $ease 0s 1 forwards;
+  }
 }
 
 .intro {
-
 
   // &__inner {}
 
