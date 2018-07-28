@@ -35,13 +35,3 @@
     animation: screen-slide-out-left $duration-two $ease 0s 1 forwards;
   }
 }
-
-.intro {
-
-  // &__inner {}
-
-  &__logo {
-    @include center();
-    width: $intro-logo-size;
-  }
-}
