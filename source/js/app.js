@@ -3,6 +3,12 @@
  ******************************************************************************/
 require('../sass/app.scss');
 
+/*******************************************************************************
+ * Font Awesome
+ ******************************************************************************/
+require('@fortawesome/fontawesome-free/js/fontawesome');
+require('@fortawesome/fontawesome-free/js/brands');
+
 /**
  *
  * @public
@@ -13,12 +19,14 @@ require('../sass/app.scss');
 import * as core from './core';
 import fonts from './fonts';
 import intro from './intro';
+import page from './page';
 
 class App {
   constructor() {
     this.core = core;
     this.fonts = fonts;
     this.intro = intro;
+    this.page = page;
 
     this.init();
 
@@ -45,9 +53,10 @@ class App {
 
     // modules
     this.intro.init(this);
+    this.page.init(this);
 
-    // fire teardown of intro on init
-    this.core.emitter.emit('app--intro-teardown');
+    // fire start of intro on init
+    this.core.emitter.emit('app--intro-exec');
     this.core.log('App: initialized');
   }
 }

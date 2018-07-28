@@ -1,0 +1,70 @@
+/*******************************************************************************
+ * Intro
+ ******************************************************************************/
+$delay: 50;
+
+.intro {
+
+  // &__inner {}
+
+  &__logo {
+    @include center();
+    width: $intro-logo-size;
+    opacity: 1;
+    transition: opacity $duration-two $ease;
+
+    svg {
+      fill: $color-white;
+      width: 100%;
+    }
+  }
+
+  &.is-animated &__logo {
+    opacity: .05;
+  }
+
+  &.is-animated.is-done &__logo {
+    opacity: 1;
+  }
+
+  &__welcome {
+    @include center();
+    width: $intro-welcome-size;
+
+    svg {
+      fill: $color-white;
+      width: 100%;
+
+      path {
+        transition: opacity $duration-two $ease,
+                    transform $duration-two $ease;
+      }
+
+      g {
+        &,
+        &.is-animated.is-done {
+          path {
+            opacity: 0;
+            transform: translate3d( 0, 40px, 0 );
+          }
+        }
+
+        &.is-animated {
+          path {
+            opacity: 1;;
+            transform: translate3d( 0, 0, 0 );
+          }
+        }
+      }
+
+      @for $i from 1 through 14 {
+        path:nth-child( #{$i} ) {
+            transition-delay: #{$i * $delay}ms;
+        }
+      }
+    }
+  }
+
+  // .is-animated { }
+
+}
