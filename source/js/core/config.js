@@ -51,6 +51,16 @@ const config = {
   /**
    *
    * @public
+   * @member offsetSelector
+   * @memberof core.config
+   * @description The string selector used for elements that need to offset their top or bottom by header/footer.
+   *
+   */
+  offsetSelector: '.js-offset',
+
+  /**
+   *
+   * @public
    * @member headerSelector
    * @memberof core.config
    * @description The string selector used for <header> node.
