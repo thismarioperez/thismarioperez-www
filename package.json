@@ -4,7 +4,7 @@
   "description": "Personal portfolio for thismarioperez",
   "main": "app.js",
   "scripts": {
-    "postinstall": "cd ./node_modules/properjs-hobo && npm install && npm run build -- 'append remove is one'",
+    "postinstall": "cd ./node_modules/properjs-hobo && npm install && npm run build -- 'append remove is one last'",
     "build": "run-s jekyll webpack",
     "dev": "run-s jekyll:dev webpack:dev",
     "jekyll": "jekyll build",
@@ -51,6 +51,7 @@
     "webpack-cli": "^3.1.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0",
     "eventemitter3": "^3.1.0",
     "properjs-hobo": "^0.3.18",
     "webfontloader": "^1.6.28"
