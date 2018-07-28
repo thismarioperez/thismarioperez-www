@@ -23,6 +23,7 @@
     .site-logo {
       padding: $nudge ($nudge / 2);
       width: $header-logo-size;
+      max-width: $header-logo-size-max;
     }
   }
 
