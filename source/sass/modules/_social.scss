@@ -1,0 +1,16 @@
+.social {
+  list-style: none;
+
+  &__item {
+    display: inline-block;
+
+    &:not(:first-child) {
+      margin-left: ($nudge / 2);
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: ($nudge / 2);
+  }
+}

@@ -1,0 +1,17 @@
+<ul class="social">
+  {% if site.github_username %}
+    <li class="social__item">
+      <a href="https://github.com/{{site.github_username}}" class="social__link" target="_blank"><i class="fab fa-github"></i></a>
+    </li>
+  {% endif %}
+  {% if site.instagram_username %}
+    <li class="social__item">
+      <a href="https://instagram.com/{{site.instagram_username}}" class="social__link" target="_blank"><i class="fab fa-instagram"></i></a>
+    </li>
+  {% endif %}
+  {% if site.twitter_username %}
+    <li class="social__item">
+      <a href="https://twitter.com/{{site.twitter_username}}" class="social__link" target="_blank"><i class="fab fa-twitter"></i></a>
+    </li>
+  {% endif %}
+</ul>
