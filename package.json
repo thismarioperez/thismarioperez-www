@@ -53,6 +53,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.2.0",
     "eventemitter3": "^3.1.0",
+    "lodash": "^4.17.10",
     "properjs-hobo": "^0.3.18",
     "webfontloader": "^1.6.28"
   }
