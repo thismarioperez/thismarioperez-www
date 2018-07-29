@@ -51,13 +51,13 @@ const toggleScrollClassNames = () => {
   core.dom.html.removeClass( 'is-scrolling' );
   let scrollTop = core.util.getScrollPos();
   if ( scrollTop <= 0 ) {
-    core.dom.html.removeClass( 'is-scrolled-up is-scrolled-down');
+    core.dom.html.removeClass( 'is-scrolled is-scrolled-up is-scrolled-down');
   } else if ( scrollTop > lastScrollTop ) {
     core.dom.html.removeClass( 'is-scrolled-up' );
-    core.dom.html.addClass( 'is-scrolled-down' );
+    core.dom.html.addClass( 'is-scrolled is-scrolled-down' );
   } else {
     core.dom.html.removeClass( 'is-scrolled-down' );
-    core.dom.html.addClass( 'is-scrolled-up' );
+    core.dom.html.addClass( 'is-scrolled is-scrolled-up' );
   }
   lastScrollTop = scrollTop;
   isBeingScrolled = false;
