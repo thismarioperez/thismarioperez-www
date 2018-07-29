@@ -11,7 +11,7 @@ $delay: 50;
     @include center();
     width: $intro-logo-size;
     opacity: 1;
-    transition: opacity $duration-two $ease;
+    transition: opacity $duration $ease;
 
     svg {
       fill: $color-white;
@@ -36,8 +36,8 @@ $delay: 50;
       width: 100%;
 
       path {
-        transition: opacity $duration-two $ease,
-                    transform $duration-two $ease;
+        transition: opacity $duration $ease,
+                    transform $duration $ease;
       }
 
       g {
