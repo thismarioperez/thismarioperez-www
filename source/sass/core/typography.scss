@@ -34,21 +34,19 @@ blockquote,
 /******************************************************************************
  * Links
 *******************************************************************************/
-.a {
-  position: relative;
-  transition: color $duration $ease;
+// paragraph links
+p a,
+blockquote a {
+  @include pa();
+}
 
-  &:after {
-    position: absolute;
-    display: block;
-    content: "";
-    bottom: 0;
-    left: 0;
-    height: 1px;
-    width: 0;
-    background-color: $color-black;
-    transition: width $duration $ease;
-  }
+// headline links
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+  @include ha();
 }
 
 /******************************************************************************
@@ -79,8 +77,7 @@ h3 {
 h1,
 h2,
 h3 {
-  &,
-  & > a {
+  & {
     color: inherit;
   }
   strong {
@@ -92,6 +89,13 @@ em {
   @include b();
 }
 
+/******************************************************************************
+ * Rule lines
+*******************************************************************************/
+hr {
+  @include hr();
+}
+
 /*******************************************************************************
  * Spacing
  ******************************************************************************/
@@ -101,35 +105,89 @@ p + ol,
 p + h1,
 p + h2,
 p + h3,
+p + h4,
+p + h5,
+p + hr,
+p + blockquote,
 ul + p,
 ul + ul,
 ul + ol,
 ul + h1,
 ul + h2,
 ul + h3,
+ul + h4,
+ul + h5,
+ul + hr,
+ul + blockquote,
 ol + p,
 ol + ol,
 ol + ul,
 ol + h1,
 ol + h2,
 ol + h3,
+ol + h4,
+ol + h5,
+ol + hr,
+ol + blockquote,
 h1 + p,
 h1 + ul,
 h1 + ol,
 h1 + h1,
 h1 + h2,
 h1 + h3,
+h1 + h4,
+h1 + h5,
+h1 + hr,
+h1 + blockquote,
 h2 + p,
 h2 + ul,
 h2 + ol,
 h2 + h1,
 h2 + h2,
 h2 + h3,
+h2 + h4,
+h2 + h5,
+h2 + hr,
+h2 + blockquote,
 h3 + p,
 h3 + ul,
 h3 + ol,
 h3 + h1,
 h3 + h2,
-h3 + h3 {
+h3 + h3,
+h3 + h4,
+h3 + h5,
+h3 + hr,
+h3 + blockquote,
+h4 + p,
+h4 + ul,
+h4 + ol,
+h4 + h1,
+h4 + h2,
+h4 + h3,
+h4 + h4,
+h4 + h5,
+h4 + hr,
+h4 + blockquote,
+h5 + p,
+h5 + ul,
+h5 + ol,
+h5 + h1,
+h5 + h2,
+h5 + h3,
+h5 + h4,
+h5 + h5,
+h5 + hr,
+h5 + blockquote,
+hr + p,
+hr + ul,
+hr + ol,
+hr + h1,
+hr + h2,
+hr + h3,
+hr + h4,
+hr + h5,
+hr + hr,
+hr + blockquote, {
   @include pp();
 }
