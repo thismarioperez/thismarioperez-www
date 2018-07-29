@@ -6,6 +6,7 @@
   top: 0;
   left: 0;
   width: 100%;;
+  z-index: $z-layer-10;
 
   &__inner {
     display: flex;
@@ -21,9 +22,29 @@
     border-left: ( $nudge / 2 ) solid $color-brand-yellow;
 
     .site-logo {
+      position: relative;
       padding: $nudge ($nudge / 2);
-      width: $header-logo-size;
-      max-width: $header-logo-size-max;
+
+      svg {
+        transition: opacity $duration $ease,
+                    transform $duration $ease;
+      }
+
+      svg:first-child {
+        opacity: 1;
+        width: $header-logo-size;
+        max-width: $header-logo-size-max;
+        transform: translate3d( 0, 0, 0 );
+      }
+
+      svg:last-child {
+        opacity: 0;
+        width: $header-logo-mark-size;
+        position: absolute;
+        top: 50%;
+        left: $nudge;
+        transform: translate3d( -100%, -50%, 0 );
+      }
     }
   }
 
