@@ -7,3 +7,13 @@
   width: 100%;
   fill: $color-white;
 }
+
+/*******************************************************************************
+ * Emoji
+ * 
+ * Integrated with jemoji jekyll plugin
+ ******************************************************************************/
+.emoji {
+  display: inline;
+  vertical-align: middle;
+}
