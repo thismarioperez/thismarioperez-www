@@ -4,7 +4,7 @@
 // Transition mixins for .screen
 @mixin screen-transition($delay: 0s) {
   animation-delay: $delay;
-  transition: visibility 0s ($duration-two + $delay) $ease;
+  transition: visibility 0s ($duration + $delay) $ease;
 }
 @mixin screen-transition-active($delay: 0s) {
   animation-delay: $delay;
