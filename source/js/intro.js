@@ -20,6 +20,7 @@ class IntroScreen extends Screen {
       this.resolve = resolve;
       this.reject = reject;
       core.dom.intro.addClass( 'is-animated' );
+      core.dom.intro.find('.js-intro-skip').one('click', this.skip.bind(this));
       this.anim();
     });
   }
@@ -56,7 +57,17 @@ class IntroScreen extends Screen {
         this.resolve();
       });
       core.dom.intro.addClass( 'is-done' );
+      core.dom.intro.find('.js-intro-skip').off();
     }, this.duration * 2 );
+  }
+
+  skip (e) {
+    e.preventDefault();
+    core.dom.intro.find('.js-intro-welcome svg path').off();
+    core.dom.intro.addClass( 'is-skipped' );
+    setTimeout(() => {
+      core.emitter.emit( 'app--intro-teardown' );
+    }, this.duration );
   }
 
 

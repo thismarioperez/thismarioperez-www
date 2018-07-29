@@ -19,17 +19,11 @@ $delay: 50;
     }
   }
 
-  &.is-animated &__logo {
-    opacity: .05;
-  }
-
-  &.is-animated.is-done &__logo {
-    opacity: 1;
-  }
-
   &__welcome {
     @include center();
     width: $intro-welcome-size;
+    opacity: 1;
+    transition: opacity $duration $ease;
 
     svg {
       fill: $color-white;
@@ -65,6 +59,27 @@ $delay: 50;
     }
   }
 
-  // .is-animated { }
+  &__skip {
+    position: absolute;
+    top: 0;
+    left: 0;
 
+    a {
+      cursor: pointer;
+    }
+  }
+
+  // states
+  &.is-animated &__logo {
+    opacity: .05;
+  }
+
+  &.is-animated.is-done &__logo,
+  &.is-skipped &__logo  {
+    opacity: 1;
+  }
+
+  &.is-skipped &__welcome {
+    opacity: 0;
+  }
 }
