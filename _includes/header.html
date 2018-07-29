@@ -1,7 +1,9 @@
 <header class="header js-header">
   <div class="header__inner -exp -bg--dark">
     <div class="header__branding -wrap">
-      <h1 class="site-logo -fzero"><a href="/">{% include svg-logo.html %}</a></h1>
+      <div class="site-logo -fzero"><a href="/">
+        {% include svg-logo.html %}
+        {% include svg-logo-mark.html %}</a></div>
     </div>
     <div class="header__social -wrap">
       {% include social.html %}
