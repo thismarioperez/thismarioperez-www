@@ -23,8 +23,10 @@
 }
 /*******************************************************************************
  * Scrolled
+ * 
+ * includes scrolled, scrolled-down, and scrolled-up
  ******************************************************************************/
-.is-scrolled {
+.is-scrolled-down {
   // swap logo with logo-mark once page is scrolled
   .site-logo {
     svg:first-child {
