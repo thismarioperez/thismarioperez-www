@@ -84,10 +84,13 @@
 }
 
 @mixin pa() {
-  display: inline-block;
+  display: inline;
   position: relative;
   z-index: $z-layer-01;
-  transition: color $duration $ease;
+  border-bottom: 1px solid $color-brand-yellow;
+  background-color: transparent;
+  transition: color $duration $ease,
+              background-color $duration $ease;
 
   &:after {
     content: "";
@@ -97,7 +100,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    transform: translate3d(0,50%,0)scaleY(.05);
+    transform: scaleY(0);
     background: $color-brand-yellow;
     z-index: $z-layer-behind;
     transition: transform $duration $ease;
@@ -109,8 +112,15 @@
     color: $color-black;
 
     &:after {
-      transform: translate3d(0,0,0)scaleY(1);
+      transform: scaleY(1);
     }
+  }
+}
+
+@mixin pa-touch-hover() {
+  &:hover {
+    color: $color-brand-black;
+    background: $color-brand-yellow;
   }
 }
 

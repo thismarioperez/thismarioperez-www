@@ -55,4 +55,12 @@
 /*******************************************************************************
  * Touchable
  ******************************************************************************/
-// .is-touchable {}
+.is-touchable {
+  &:not(.is-scrolling) {
+    // paragraph link hovers
+    p a,
+    blockquote a {
+      @include pa-touch-hover();
+    }
+  }
+}
