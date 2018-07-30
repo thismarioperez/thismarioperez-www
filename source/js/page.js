@@ -2,6 +2,7 @@ import * as core from './core';
 import offsetController from './controllers/offsetController';
 import scrollController from './controllers/scrollController';
 import scrollJackController from './controllers/scrollJackController';
+import animateController from './controllers/animateController';
 
 /**
  *
@@ -13,6 +14,7 @@ import scrollJackController from './controllers/scrollJackController';
 const onPageUnload = () => {
   offsetController.destroy();
   scrollJackController.destroy();
+  animateController.destroy();
 };
 
 /**
@@ -25,6 +27,7 @@ const onPageUnload = () => {
 const onPageLoad = () => {
   offsetController.init();
   scrollJackController.init();
+  animateController.init();
   // track pageview
   core.emitter.emit('app--analytics-pageview');
 };
