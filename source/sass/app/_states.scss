@@ -2,6 +2,14 @@
  * State
  ******************************************************************************/
 /*******************************************************************************
+ * Page Ready
+ ******************************************************************************/
+.is-ready {
+  .contact-button-wrapper {
+    @include contact-btn-visible();
+  }
+}
+/*******************************************************************************
  * Scrolled
  ******************************************************************************/
 .is-scrolled {
@@ -22,9 +30,9 @@
  ******************************************************************************/
 .is-hoverable {
 
+  // prevent  hover state while scrolling
   &:not(.is-scrolling) {
     // paragraph link hovers
-    // prevent link hover state while scrolling
     p a,
     blockquote a {
       @include pa-hover();
@@ -36,6 +44,11 @@
     h4 a,
     h5 a {
       @include ha-hover();
+    }
+
+    // contact button
+    .contact-button {
+      @include contact-btn-hover();
     }
   }
 }
