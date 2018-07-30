@@ -9,6 +9,10 @@
     a {
       color: inherit;
     }
+
+    h3 {
+      word-break: break-all;
+    }
   }
 
   &__close-wrapper {
