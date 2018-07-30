@@ -1,5 +1,19 @@
 <footer class="footer js-footer">
-  <div class="footer__inner -exp-3 -bg--dark">
-    <div class="footer__content -wrap"></div>
+  <div class="footer__inner -exp-3 -wrap -bg--dark">
+    <div class="footer__content footer__grid grid grid--gutters grid--full grid--fit-sm grid--top">
+      <div class="footer__cell grid__cell">
+        <p>{% include svg-logo.html %}</p>
+        <p>Thanks for stopping by! :metal:</p>
+      </div>
+      <div class="footer__cell grid__cell">
+        {% if site.email%}<p><a href="mailto:{{site.email}}"><i class="fas fa-envelope"></i> {{site.email}}</a></p>{% endif %}
+        {% if site.phone%}<p><a href="tel:{{site.phone}}"><i class="fas fa-mobile-alt"></i> {{site.phone}}</a></p>{% endif %}
+      </div>
+      <div class="footer__cell grid__cell">
+        <a href="https://circleforum.squarespace.com/" target="_blank">
+          {% include svg-circle-badge.html %}
+        </a>
+      </div>
+    </div>
   </div>
 </footer>
