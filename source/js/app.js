@@ -6,9 +6,9 @@ require('../sass/app.scss');
 /*******************************************************************************
  * Font Awesome
  ******************************************************************************/
+require('@fortawesome/fontawesome-free/js/fontawesome');
 require('@fortawesome/fontawesome-free/js/brands');
 require('@fortawesome/fontawesome-free/js/regular');
-require('@fortawesome/fontawesome-free/js/fontawesome');
 
 /**
  *
