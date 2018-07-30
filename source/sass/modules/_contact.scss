@@ -12,6 +12,10 @@
 
     h3 {
       word-break: break-all;
+
+      @media #{$small-below} {
+        font-size: ($h3-size * 0.7);
+      }
     }
   }
 
