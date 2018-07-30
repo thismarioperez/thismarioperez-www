@@ -24,6 +24,9 @@ const detect = {
       window.navigator.userAgent
     );
 
+    // Remove no-js
+    dom.html.removeClass( 'no-js' ).addClass( 'js' );
+
     // Touch support mode
     if (this._isTouch) {
       dom.html.addClass('is-touchable');
