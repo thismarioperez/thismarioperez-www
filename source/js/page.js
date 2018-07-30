@@ -1,6 +1,7 @@
 import * as core from './core';
 import offsetController from './controllers/offsetController';
 import scrollController from './controllers/scrollController';
+import scrollJackController from './controllers/scrollJackController';
 
 /**
  *
@@ -11,6 +12,7 @@ import scrollController from './controllers/scrollController';
  */
 const onPageUnload = () => {
   offsetController.destroy();
+  scrollJackController.destroy();
 };
 
 /**
@@ -22,6 +24,7 @@ const onPageUnload = () => {
  */
 const onPageLoad = () => {
   offsetController.init();
+  scrollJackController.init();
 };
 
 /**
