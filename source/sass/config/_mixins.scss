@@ -11,7 +11,11 @@
 @mixin center-content() {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  
+  @media #{$large} {
+    justify-content: center;
+  }
 }
 @mixin center {
   position: absolute;
@@ -240,4 +244,11 @@
 }
 @mixin bg-dark() {
   background: $color-black;
+}
+@mixin color-dark() {
+  color: $color-brand-black;
+
+  hr {
+    border-color: $color-brand-black;
+  }
 }
