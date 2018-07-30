@@ -33,6 +33,7 @@ kramdown:
 
 # theme: minima
 plugins:
+  - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
   - jemoji
