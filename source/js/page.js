@@ -25,7 +25,7 @@ const onPageUnload = () => {
  *
  */
 const onPageLoad = () => {
-  window.scrollTo( 0, 0 );
+  window.scrollTo(0, 0);
   offsetController.init();
   scrollJackController.init();
   animateController.init();
