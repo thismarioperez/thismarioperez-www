@@ -2,20 +2,23 @@
  * State
  ******************************************************************************/
 /*******************************************************************************
- * Page Ready
+ * No Js
  ******************************************************************************/
-.is-ready {
-  .contact-button-wrapper {
-    @include contact-btn-visible();
-  }
-}
-html:not(.is-ready) {
+.no-js {
   // Prevent these elements from being visible until page has is-ready state.
   .header
   .main,
   .footer,
   .contact {
-    visibility: hidden;
+    display: none;
+  }
+}
+/*******************************************************************************
+ * Page Ready
+ ******************************************************************************/
+.is-ready {
+  .contact-button-wrapper {
+    @include contact-btn-visible();
   }
 }
 /*******************************************************************************
