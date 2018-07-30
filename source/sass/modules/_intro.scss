@@ -5,7 +5,10 @@ $delay: 50;
 
 .intro {
 
-  // &__inner {}
+  &__inner {
+    background: $color-brand-black;
+    transition: background-color $duration $ease;
+  }
 
   &__logo {
     @include center();
@@ -70,10 +73,17 @@ $delay: 50;
   }
 
   // states
+  &.is-animated &__inner {
+    background: $color-black;
+  }
   &.is-animated &__logo {
-    opacity: .05;
+    opacity: .025;
   }
 
+  &.is-animated.is-done &__inner,
+  &.is-skipped &__inner {
+    background: $color-brand-black;
+  }
   &.is-animated.is-done &__logo,
   &.is-skipped &__logo  {
     opacity: 1;
