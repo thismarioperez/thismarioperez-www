@@ -70,6 +70,7 @@ class Screen {
     return new Promise( resolve => {
       this.close().then(() => {
         this.element.remove();
+        resolve();
         log(`${this.options.moduleName}: teardown`);
       });
     });
