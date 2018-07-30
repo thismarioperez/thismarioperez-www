@@ -1,0 +1,61 @@
+.contact {}
+
+
+.contact-button {
+  position: relative;
+  display: block;
+  padding: $nudge;
+  color: $color-brand-black;
+  background: $color-brand-yellow;
+  border: 1px solid  $color-brand-yellow;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: $z-layer-01;
+  transition: color $duration $ease,
+              background-color $duration $ease,
+              border-color $duration $ease;
+
+
+  > span {
+    position: relative;
+    font-size: $h3-size;
+  }
+
+  &:before {
+    content: "";
+    @include cover();
+    background: $color-brand-black;
+    transform: scaleX( 0 );
+    transform-origin: center;
+    transition: transform $duration $ease;
+  }
+
+  &-wrapper {
+    position: fixed;
+    bottom: $nudge;
+    right: $nudge;
+    z-index: $z-layer-infront;
+    transform: translate3d( 100%, 0, 0 );
+    opacity: 0;
+    transition: opacity $duration $ease,
+                transform $duration $ease;
+  }
+}
+
+// state
+@mixin contact-btn-hover() {
+  &:hover {
+    color: $color-white;
+    background-color: $color-brand-black;
+    border-color: $color-white;
+
+    &:before {
+      transform: scaleX(1);
+    }
+  }
+}
+
+@mixin contact-btn-visible() {
+  transform: translate3d( 0, 0, 0 );
+  opacity: 1;
+}
