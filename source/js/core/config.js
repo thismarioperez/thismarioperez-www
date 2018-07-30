@@ -143,10 +143,10 @@ const config = {
    * @public
    * @member scrollJackSelector
    * @memberof core.config
-   * @description Selector to select links deemed 'scroll jackable'
+   * @description Selector to select links deemed 'scroll jackable'.
    *
    */
-  scrollJackSelector: 'a[href^="#"]',
+  scrollJackSelector: 'a[href^="#"]'
 };
 
 export default config;
