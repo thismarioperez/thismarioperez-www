@@ -76,3 +76,6 @@
 .-bg--dark {
   @include bg-dark();
 }
+.-color--dark {
+  @include color-dark;
+}
