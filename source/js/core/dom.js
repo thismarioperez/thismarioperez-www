@@ -77,7 +77,17 @@ const dom = {
    * @description the cached intro node
    *
    */
-  intro: $(config.introSelector)
+  intro: $(config.introSelector),
+
+  /**
+   *
+   * @public
+   * @member contact
+   * @memberof core.dom
+   * @description the cached contact node
+   *
+   */
+  contact: $(config.contactSelector)
 };
 
 /******************************************************************************
