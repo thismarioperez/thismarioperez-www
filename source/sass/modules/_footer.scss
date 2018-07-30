@@ -1,0 +1,18 @@
+.footer {
+
+  &__inner {
+    @media #{$small-below} {
+      @include wrap();
+    }
+  }
+
+  &__content {
+    @media #{$small-below} {
+      @include wrap-copy();
+    }
+  }
+
+  svg {
+    max-width: 300px;
+  }
+}
