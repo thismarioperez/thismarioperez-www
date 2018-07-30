@@ -1,0 +1,153 @@
+/******************************************************************************
+ * Modules/Grid
+ * Simple grid with Flexbox
+ * @see: https://philipwalton.github.io/solved-by-flexbox/demos/grids/
+*******************************************************************************/
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+
+  &__cell {
+    flex: 1;
+  }
+
+  // Gutters
+  &--gutters {
+    margin: -#{$grid-gutter} 0 0 -#{$grid-gutter};
+  }
+  &--gutters > &__cell {
+    padding: $grid-gutter 0 0 $grid-gutter;
+  }
+
+  // Row Alignment
+  &--top {
+    align-items: flex-start;
+  }
+  &--bottom {
+    align-items: flex-end;
+  }
+  &--center {
+    align-items: center;
+  }
+
+  // Cell Alignment
+  &__cell--top {
+    align-self: flex-start;
+  }
+  &__cell--bottom {
+    align-self: flex-end;
+  }
+  &__cell--center {
+    align-self: center;
+  }
+
+  // Responsive base
+  &--fit > &__cell,
+  & > &__cell--fit {
+    flex: 1;
+  }
+  &--full > &__cell,
+  & > &__cell--full {
+    flex: 0 0 100%;
+  }
+  &--1of2 > &__cell,
+  & > &__cell--1of2 {
+    flex: 0 0 50%;
+  }
+  &--1of3 > &__cell,
+  & > &__cell--1of3 {
+    flex: 0 0 33.3333%;
+  }
+  &--2of3 > &__cell,
+  & > &__cell--2of3 {
+    flex: 0 0 66.6666%;
+  }
+  &--1of4 > &__cell,
+  & > &__cell--1of4 {
+    flex: 0 0 25%;
+  }
+
+  // Responsive breakpoint small
+  @media #{$small} {
+    &--fit-sm > &__cell,
+    & > &__cell--fit-sm {
+      flex: 1;
+    }
+    &--full-sm > &__cell,
+    & > &__cell--full-sm {
+      flex: 0 0 100%;
+    }
+    &--1of2-sm > &__cell,
+    & > &__cell--1of2-sm {
+      flex: 0 0 50%;
+    }
+    &--1of3-sm > &__cell,
+    & > &__cell--1of3-sm {
+      flex: 0 0 33.3333%;
+    }
+    &--2of3-sm > &__cell,
+    & > &__cell--2of3-sm {
+      flex: 0 0 66.6666%;
+    }
+    &--1of4-sm > &__cell,
+    & > &__cell--1of4-sm {
+      flex: 0 0 25%;
+    }
+  }
+
+  // Responsive breakpoint medium
+  @media #{$medium} {
+    &--fit-md > &__cell,
+    & > &__cell--fit-md {
+      flex: 1;
+    }
+    &--full-md > &__cell,
+    & > &__cell--full-md {
+      flex: 0 0 100%;
+    }
+    &--1of2-md > &__cell,
+    & > &__cell--1of2-md {
+      flex: 0 0 50%;
+    }
+    &--1of3-md > &__cell,
+    & > &__cell--1of3-md {
+      flex: 0 0 33.3333%;
+    }
+    &--2of3-md > &__cell,
+    & > &__cell--2of3-md {
+      flex: 0 0 66.6666%;
+    }
+    &--1of4-md > &__cell,
+    & > &__cell--1of4-md {
+      flex: 0 0 25%;
+    }
+  }
+
+  // Responsive breakpoint large
+  @media #{$large} {
+    &--fit-lg > &__cell,
+    & > &__cell--fit-lg {
+      flex: 1;
+    }
+    &--full-lg > &__cell,
+    & > &__cell--full-lg {
+      flex: 0 0 100%;
+    }
+    &--1of2-lg > &__cell,
+    & > &__cell--1of2-lg {
+      flex: 0 0 50%;
+    }
+    &--1of3-lg > &__cell,
+    & > &__cell--1of3-lg {
+      flex: 0 0 33.3333%;
+    }
+    &--2of3-lg > &__cell,
+    & > &__cell--2of3-lg {
+      flex: 0 0 66.6666%;
+    }
+    &--1of4-lg > &__cell,
+    & > &__cell--1of4-lg {
+      flex: 0 0 25%;
+    }
+  }
+}
