@@ -127,6 +127,16 @@ const config = {
    *
    */
   readyClassname: 'is-ready',
+
+  /**
+   *
+   * @public
+   * @member scrollJackSelector
+   * @memberof core.config
+   * @description Selector to select links deemed 'scroll jackable'
+   *
+   */
+  scrollJackSelector: 'a[href^="#"]',
 };
 
 export default config;
