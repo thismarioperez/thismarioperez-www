@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
   {% include head.html %}
-
   <body class="-fzero">
     {% include header.html %}
-
     <main id="{{page.id | slugify}}"class="main js-main page page--{{ page.layout }}-layout page--{{ page.slug }}">
       {{ content }}
     </main>
-
     {% include footer.html %}
     {% include contact.html %}
     {% include intro.html %}
     {% include scripts.html %}
   </body>
-
 </html>
