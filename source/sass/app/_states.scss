@@ -9,6 +9,15 @@
     @include contact-btn-visible();
   }
 }
+html:not(.is-ready) {
+  // Prevent these elements from being visible until page has is-ready state.
+  .header
+  .main,
+  .footer,
+  .contact {
+    visibility: hidden;
+  }
+}
 /*******************************************************************************
  * Scrolled
  ******************************************************************************/
