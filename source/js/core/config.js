@@ -35,7 +35,7 @@ const config = {
    * @description Google analytics tracking id
    *
    */
-  gaTrackingId: '',
+  gaTrackingId: 'UA-123069095-1',
 
   /**
    *
@@ -97,6 +97,16 @@ const config = {
    *
    */
   introSelector: '.js-intro',
+
+  /**
+   *
+   * @public
+   * @member introSelector
+   * @memberof core.config
+   * @description The string selector used for <contact> node.
+   *
+   */
+  contactSelector: '.js-contact',
 
   /**
    *

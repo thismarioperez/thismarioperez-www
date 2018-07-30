@@ -25,6 +25,8 @@ const onPageUnload = () => {
 const onPageLoad = () => {
   offsetController.init();
   scrollJackController.init();
+  // track pageview
+  core.emitter.emit('app--analytics-pageview');
 };
 
 /**

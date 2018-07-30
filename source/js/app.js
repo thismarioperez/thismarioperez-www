@@ -8,7 +8,7 @@ require('../sass/app.scss');
  ******************************************************************************/
 require('@fortawesome/fontawesome-free/js/fontawesome');
 require('@fortawesome/fontawesome-free/js/brands');
-require('@fortawesome/fontawesome-free/js/regular');
+require('@fortawesome/fontawesome-free/js/solid');
 
 /**
  *
@@ -20,6 +20,8 @@ require('@fortawesome/fontawesome-free/js/regular');
 import * as core from './core';
 import fonts from './fonts';
 import intro from './intro';
+import contact from './contact';
+import analytics from './analytics';
 import page from './page';
 
 class App {
@@ -27,6 +29,8 @@ class App {
     this.core = core;
     this.fonts = fonts;
     this.intro = intro;
+    this.contact = contact;
+    this.analytics = analytics;
     this.page = page;
 
     this.init();
@@ -54,6 +58,8 @@ class App {
 
     // modules
     this.intro.init(this);
+    this.contact.init(this);
+    this.analytics.init(this);
     this.page.init(this);
 
     // fire start of intro on init
