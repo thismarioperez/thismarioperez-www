@@ -27,7 +27,7 @@
   width: 100%;
 }
 .-tall {
-  height: 100%;
+  min-height: 100vh;
 }
 .-block {
   display: block;
@@ -65,6 +65,9 @@
     display: inline-block;
     text-indent: -99999%;
   }
+}
+.-center-content {
+  @include center-content();
 }
 
 /*******************************************************************************
