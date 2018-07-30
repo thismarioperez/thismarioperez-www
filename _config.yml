@@ -19,7 +19,7 @@ phone: '863.978.7139'
 description: >- # this means to ignore newlines until "baseurl:"
   The portfolio of web projects for thisMarioPerez.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.thismarioperez.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: thismarioperez
 github_username:  thismarioperez
 instagram_username: thismarioperez
