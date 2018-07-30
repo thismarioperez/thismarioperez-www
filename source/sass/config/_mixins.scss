@@ -116,7 +116,7 @@
   color: $color-brand-yellow;
   overflow: hidden;
 
-  &:after {
+  &:before {
     content: "";
     display: block;
     position: absolute;
@@ -128,10 +128,17 @@
     z-index: $z-layer-01;
     transition: left $duration-two $ease;
   }
+
+  &:after {
+    content: "\2192";
+    color: inherit;
+    font-weight: normal;
+    margin-left: ($nudge / 2);
+  }
 }
 
 @mixin ha-hover() {
-  &:hover:after {
+  &:hover:before {
     left: calc(100% + 10px);
   }
 }
@@ -211,6 +218,7 @@
     max-width: $wrap-copy;
   }
   @media #{$large} {
+    width: $wrap-copy;
     margin: 0 auto;
   }
 }
