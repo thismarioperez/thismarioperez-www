@@ -1,6 +1,5 @@
 ---
-modifiers: '-bg--dark js-offset'
-data_attrs: 'data-offset-top'
+modifiers: '-tall -center-content -bg--dark'
 ---
 
 # Hi there.
