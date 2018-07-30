@@ -6,7 +6,7 @@ const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BabiliPlugin = require('babili-webpack-plugin');
 const IS_DEV = process.env.NODE_ENV === 'development';
-const browsers = ['last 2 versions', 'ios >= 9'];
+const browsers = ['last 2 versions', 'ios >= 10'];
 const CleanUpStatsPlugin = require('./webpack.cleanup-stats-plugin');
 
 module.exports = {
