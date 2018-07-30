@@ -1,10 +1,19 @@
 <div class="contact-button-wrapper">
   <div class="contact-button-wrapper__inner">
-    <a class="contact-button js-contact-button"><span><i class="far fa-address-card"></i></span></a></p>
+    <a class="contact-button js-contact-button"><span><i class="fas fa-address-card"></i></span></a></p>
   </div>
 </div>
-<div class="contact js-contact">
-  <div class="contact__inner screen__inner">
-
+<div class="contact js-contact screen">
+  <div class="contact__close-wrapper">
+    <a class="contact__close js-contact-close"><span>{% include svg-close.html %}</span></a>
+  </div>
+  <div class="contact__inner screen__inner -wrap -exp -center-content">
+    <div class="contact__content -wrap-copy -color--dark -text--left">
+      <h1>Let's Chat.</h1>
+      <hr>
+      <p><br/></p>
+      {% if site.email%}<h3><a href="mailto:{{site.email}}"><i class="fas fa-envelope"></i> {{site.email}}</a></h3>{% endif %}
+      {% if site.phone%}<h3><a href="tel:{{site.phone}}"><i class="fas fa-mobile-alt"></i> {{site.phone}}</a></h3>{% endif %}
+    </div>
   </div>
 </div>
