@@ -12,7 +12,10 @@
     }
   }
 
-  svg {
-    max-width: 300px;
+  svg.svg-icon--logo {
+    max-width: 250px;
+  }
+  svg.svg-icon--circle-badge {
+    max-width: 200px;
   }
 }
