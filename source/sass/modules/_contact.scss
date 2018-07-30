@@ -1,5 +1,41 @@
-.contact {}
+.contact {
 
+  &__inner {
+    color: $color-brand-black;
+    background: $color-brand-yellow;
+  }
+
+  &__content {
+    a {
+      color: inherit;
+    }
+  }
+
+  &__close-wrapper {
+    position: fixed;
+    bottom: $nudge;
+    right: $nudge;
+    z-index: $z-layer-infront;
+  }
+
+  &__close {
+    position: relative;
+    display: block;
+    padding: $nudge;
+    color: $color-brand-black;
+    border: 1px solid $color-brand_black;
+    cursor: pointer;
+
+    > span {
+      display: block;
+      width: $h3-size;
+
+      > svg {
+        fill: $color-brand-black;
+      }
+    }
+  }
+}
 
 .contact-button {
   position: relative;
