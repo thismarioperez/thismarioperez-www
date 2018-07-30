@@ -66,6 +66,8 @@ $delay: 50;
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
+    transition: opacity $duration $ease;
 
     a {
       cursor: pointer;
@@ -78,6 +80,9 @@ $delay: 50;
   }
   &.is-animated &__logo {
     opacity: .025;
+  }
+  &.is-animated &__skip {
+    opacity: 1;
   }
 
   &.is-animated.is-done &__inner,

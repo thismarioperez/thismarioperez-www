@@ -108,6 +108,7 @@ const exec = () => {
 const teardown = () => {
   Intro.teardown().then(() => {
     Intro = null; // null out the Intro once the element is removed from DOM.
+    core.dom.html.addClass( core.config.readyClassname ); // add ready state classname.
   });
 };
 
