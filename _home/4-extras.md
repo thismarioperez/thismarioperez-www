@@ -17,4 +17,4 @@ In need of some music to help you focus on your work? Check out my [$code_vibez]
 <br/><br/>
 
 {:.animate.js-animate}
-Just want to see what I'm up to? Peruse my open-source projects on [Github](https://github.com/thismarioperez). Browse through my dad-to-day happenings on [Instagram](https://instagram.com/thismarioperez). Follow my less than glamorous [Twitter](https://twitter.com/thismarioperez) feed.
+Just want to see what I'm up to? Peruse my open-source projects on [Github](https://github.com/thismarioperez). Browse through my day-to-day happenings on [Instagram](https://instagram.com/thismarioperez). Follow my less than glamorous [Twitter](https://twitter.com/thismarioperez) feed.
