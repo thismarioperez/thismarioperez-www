@@ -56,11 +56,13 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.2.0",
     "autotrack": "^2.4.1",
+    "core-js": "^2.5.7",
     "eventemitter3": "^3.1.0",
     "lodash": "^4.17.10",
     "properjs-easing": "^0.2.0",
     "properjs-hobo": "^0.3.18",
     "properjs-scroll2": "^0.2.0",
+    "raf": "^3.4.0",
     "webfontloader": "^1.6.28"
   }
 }
