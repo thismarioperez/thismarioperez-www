@@ -40,9 +40,9 @@ const trackPage = () => {
  *
  */
 const init = () => {
-  // if (core.env.isDev()) {
-  //   return false;
-  // }
+  if (core.env.isDev()) {
+    return false;
+  }
   (function(i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
     (i[r] =
