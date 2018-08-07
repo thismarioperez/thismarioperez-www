@@ -12,7 +12,7 @@
     "jekyll:serve": "JEKYLL_ENV=development bundle exec jekyll serve",
     "browsersync": "browser-sync start --proxy 'localhost:4000' --files '_site'",
     "start": " run-p server webpack:dev:watch",
-    "server": "run-p bundle exec jekyll:serve browsersync",
+    "server": "run-p jekyll:serve browsersync",
     "webpack": "NODE_ENV=production webpack",
     "webpack:dev": "NODE_ENV=development webpack",
     "webpack:dev:watch": "NODE_ENV=development webpack --watch",
