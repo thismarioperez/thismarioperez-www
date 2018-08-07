@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-  {% include head.html %}
-  <body class="-fzero">
-    {% include header.html %}
-    <main id="{{page.id | slugify}}"class="main js-main page page--{{ page.layout }}-layout page--{{ page.slug }}">
-      {{ content }}
-    </main>
-    {% include footer.html %}
-    {% include contact.html %}
-    {% include intro.html %}
-    {% include scripts.html %}
-  </body>
-</html>
+---
+layout: core
+---
+
+<section class="page__section -wrap{% if page.modifiers %} {{page.modifiers}}{% endif %}"{% if page.data_attrs %} {{page.data_attrs}}{% endif %}>
+  <div class="page__section__inner -exp-3 -wrap-copy">
+    {{ page.content | markdownify }}
+  </div>
+</section>
