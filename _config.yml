@@ -20,9 +20,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   The portfolio of web projects for thisMarioPerez.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.thismarioperez.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: thismarioperez
+
+# Theme Social Media Info
 github_username:  thismarioperez
 instagram_username: thismarioperez
+twitter_username: thismarioperez
 
 # Build settings
 markdown: kramdown
@@ -31,11 +33,11 @@ markdown: kramdown
 kramdown:
   input: GFM
 
-# theme: minima
 plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-favicon
   - jemoji
 
 # Defaults
@@ -54,9 +56,30 @@ collections:
   home:
     output: false
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
+################################################################################
+# Plugin Configurations
+################################################################################
+# jekyll-seo-tag plugin config
+logo: /assets/img/logo-thismarioperez.png
+twitter:
+  username: thismarioperez
+  card: summary
+social:
+  name: Mario Perez
+  links:
+  - https://twitter.com/thismarioperez
+  - https://instagram.com/thismarioperez
+  - https://github.com/thismarioperez
+
+# jekyll-favicon config
+favicon:
+  source: favicon.svg
+  path: /assets/img/favicon
+
+################################################################################
+# File Managing
+################################################################################
+# The following items will not be processed
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -73,4 +96,4 @@ exclude:
 
 # Files to keep when rebuilding to destination.
 keep_files:
-  - assets
+  - assets/img/favicon
