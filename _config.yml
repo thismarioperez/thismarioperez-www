@@ -47,6 +47,8 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+      modifiers: "js-offset"
+      data_attrs: "data-offset-top"
       
 # Collections
 collections:
