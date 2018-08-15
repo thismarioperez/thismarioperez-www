@@ -17,7 +17,7 @@
     "webpack:dev": "NODE_ENV=development webpack",
     "webpack:dev:watch": "NODE_ENV=development webpack --watch",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d _site -r https://github.com/thismarioperez/thismarioperez.github.io.git -b master"
+    "deploy": "gh-pages -d _site -r https://github.com/thismarioperez/thismarioperez-www.git -b gh-pages"
   },
   "repository": {
     "type": "git",
