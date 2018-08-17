@@ -31,6 +31,17 @@ Design Collaborator: [Logan Kasabian](https://www.behance.net/lkasabian){:target
 <br/><br/>
 
 {:.animate.js-animate}
+### [Green Construction Services](https://www.green-construction.com/){:target="_blank"}
+
+{:.animate.js-animate}
+Custom [Squarespace](https://developers.squarespace.com/){:target="_blank"} Template
+
+{:.animate.js-animate}
+Design Collaborator: [Lowry Creative](https://www.lowrycreative.com/){:target="_blank"}
+
+<br/><br/>
+
+{:.animate.js-animate}
 ### [thisMarioPerez](https://thismarioperez.com/){:target="_blank"}
 
 {:.animate.js-animate}
@@ -65,17 +76,6 @@ Design Collaborator: [Lowry Creative](https://www.lowrycreative.com/){:target="_
 
 {:.animate.js-animate}
 ### [Lloyd Goldstein](https://www.lloydgoldstein.com/){:target="_blank"}
-
-{:.animate.js-animate}
-Custom [Squarespace](https://developers.squarespace.com/){:target="_blank"} Template
-
-{:.animate.js-animate}
-Design Collaborator: [Lowry Creative](https://www.lowrycreative.com/){:target="_blank"}
-
-<br/><br/>
-
-{:.animate.js-animate}
-### [Green Construction Services](https://gcs-production.squarespace.com/){:target="_blank"}
 
 {:.animate.js-animate}
 Custom [Squarespace](https://developers.squarespace.com/){:target="_blank"} Template
